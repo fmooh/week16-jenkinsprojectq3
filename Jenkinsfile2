@@ -20,8 +20,8 @@ pipeline {
         stage('upload artifact'){
             steps{
                 sh 'curl -uadmin:AP2VJAxR5X9qYMhSDpg96sKVLPJ -T \
-                target/bio*.jar \
-                "http://http://44.211.254.164:8081/artifactory/geoapp/"'
+                target/target/bioMedical-0.0.6-SNAPSHOT.jar \
+                "http://44.211.254.164:8081/artifactory/geoapp/"'
 
             }
         }
