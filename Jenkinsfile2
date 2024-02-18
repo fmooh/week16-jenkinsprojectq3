@@ -20,9 +20,7 @@ pipeline {
         }
         stage('upload artifact'){
             steps{
-                sh 'curl -uadmin:AP2VJAxR5X9qYMhSDpg96sKVLPJ -T \
-                target/bioMedical-0.0.7-SNAPSHOT.jar \
-                "http://44.212.0.179/:8081/artifactory/geoapp/"'
+                sh 'curl -uadmin:AP2VJAxR5X9qYMhSDpg96sKVLPJ -T target/bio*.jar "http://44.212.0.179:8081/artifactory/geoapp/"'
 
             }
         }
