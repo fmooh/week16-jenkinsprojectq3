@@ -22,7 +22,7 @@ pipeline {
             steps{
                 sh 'curl -uadmin:AP2VJAxR5X9qYMhSDpg96sKVLPJ -T \
                 target/bioMedical-0.0.6-SNAPSHOT.jar \
-                "http://44.211.254.164:8081/artifactory/geoapp/"'
+                "http://44.212.0.179/:8081/artifactory/geoapp/"'
 
             }
         }
